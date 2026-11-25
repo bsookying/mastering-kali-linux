@@ -59,7 +59,7 @@
 | Tool | Version | Notes |
 |---|---|---|
 | chisel | 1.13.0 | HTTP tunnel / SOCKS proxy |
-| ligolo-ng | 0.9.2 | Transparent proxy tunnel — binary path TBD (not in $PATH, check `/usr/sbin/` or `find / -name ligolo-ng 2>/dev/null`) |
+| ligolo-ng | 0.9.2 | Transparent proxy tunnel — binaries: `/usr/bin/ligolo-proxy` (runs on Kali) + `/usr/bin/ligolo-agent` (deploys on target). No `ligolo-ng` symlink. |
 
 ---
 
