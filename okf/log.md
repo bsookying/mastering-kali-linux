@@ -29,4 +29,21 @@
 - [ ] Identify Kali host(s) and range CIDRs → `ranges/`
 - [ ] Deep-dive `hexstrike_server` capabilities → `okf/mcp-inventory.md`
 - [ ] Evaluate `mcp-kali-server` if available
-- [ ] Confirm which metapackages are pre-installed on the range Kali host
+- [x] Confirm which metapackages are pre-installed on the range Kali host
+
+---
+
+## 2026-11-24: Kali node inventoried and tools updated
+
+* Kali host: `10.3.0.57`, credentials `kali/kali`, RDP:3389, SSH:22
+* OS: Kali GNU/Linux Rolling 2026.3, kernel 7.1.5+kali-amd64
+* Disk: 79G / 18G used. RAM: 15GB. Fully up to date — no pending upgrades.
+* Metapackages: kali-linux-core, kali-linux-default, kali-linux-headless, kali-tools-top10 (all 2026.4.2)
+* Installed additional tools: chisel 1.13.0, ligolo-ng 0.9.2, enum4linux-ng 1.3.10, coercer 2.4.3, bloodhound 9.9.2, neo4j 5.2.0
+* Full inventory written to `okf/kali-inventory.md`
+* No standalone C2 beyond Metasploit — sufficient for initial guide scenarios
+
+### Next
+- [ ] Verify ligolo-ng binary path (`find / -name ligolo-ng 2>/dev/null` on Kali)
+- [ ] Design and write attack scenario guides under `guides/`
+- [ ] Add range CIDR details to `ranges/`
